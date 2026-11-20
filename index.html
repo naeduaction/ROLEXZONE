@@ -1,158 +1,222 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1888514275686102');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1888514275686102&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROLEX MT ZONE - Official Platform</title>
-    <!-- Tailwind CSS for responsive layout & clean styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter & Noto Sans Devanagari for crisp English & Hindi typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script>
-        // Custom Tailwind font & color configuration
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'Noto Sans Devanagari', 'sans-serif'],
-                    },
-                    colors: {
-                        creamBg: '#fbf8f1',
-                        brandGreen: '#28a745',
-                        brandCharcoal: '#222222',
-                        ctaBlueTop: '#0077cc',
-                        ctaBlueBottom: '#005fa3',
-                        ctaShadow: '#00477a',
-                    }
-                }
-            }
+    <title>ROLEX 777 - Premium Portal</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --gold-primary: #d4af37;
+            --gold-gradient: linear-gradient(145deg, #d4af37, #b8860b);
+            --text-white: #ffffff;
+            --text-gray: #a0a0a0;
+            --border-gold: rgba(212, 175, 55, 0.3);
         }
-    </script>
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Header Section */
+        .header-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--gold-primary);
+            border-radius: 40px;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.1);
+        }
+
+        .brand-name {
+            color: var(--gold-primary);
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .sub-brand {
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            color: var(--text-gray);
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .welcome-text {
+            color: var(--gold-primary);
+            font-size: 1.8rem;
+            margin: 25px 0 10px 0;
+        }
+
+        .description {
+            color: var(--text-white);
+            font-size: 1rem;
+            line-height: 1.5;
+            padding: 0 10px;
+        }
+
+        /* Market Section */
+        .market-title {
+            color: var(--gold-primary);
+            text-align: center;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .market-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-gold);
+            border-radius: 15px;
+            padding: 20px 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .market-card:hover {
+            transform: scale(1.02);
+            border-color: var(--gold-primary);
+        }
+
+        .market-name {
+            color: var(--gold-primary);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .market-info {
+            color: var(--text-gray);
+            font-size: 0.8rem;
+        }
+
+        /* Telegram Button */
+        .telegram-btn {
+            background: var(--gold-gradient);
+            color: #000;
+            width: 100%;
+            padding: 18px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(184, 134, 11, 0.4);
+        }
+
+        .telegram-btn:active {
+            transform: translateY(2px);
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            text-align: center;
+            line-height: 1.4;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 400px) {
+            .brand-name { font-size: 2.2rem; }
+            .market-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-<body class="bg-[#fbf8f1] text-[#333333] font-sans antialiased min-h-screen flex flex-col items-center justify-center px-4 py-10 sm:py-14 selection:bg-blue-200">
+<body>
 
-    <!-- Main Centered Single-Column Container -->
-    <main class="w-full max-w-2xl mx-auto flex flex-col items-center text-center">
-
-        <!-- Clickable Circular Brand Logo Badge -->
-        <a href="https://t.me/+zcthgmrsbUo1ZmY1" 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           aria-label="Join ROLEX MT ZONE on Telegram"
-           class="group relative w-44 h-44 sm:w-48 sm:h-48 rounded-full bg-[#f0f1f3] shadow-sm border border-gray-200/70 flex items-center justify-center mb-6 transition-transform duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-300">
-            
-            <!-- Custom SVG Brand Emblem matching reference aesthetic -->
-            <svg viewBox="0 0 200 200" class="w-full h-full p-2" xmlns="http://www.w3.org/2000/svg">
-                <!-- Subtle Inner Circular Backdrop -->
-                <circle cx="100" cy="100" r="92" fill="#eff0f2" />
-                
-                <!-- Stylish Gold/Amber Accent Circle on the left -->
-                <circle cx="62" cy="100" r="34" fill="#f5a623" class="transition-transform duration-300 group-hover:scale-105" />
-                
-                <!-- Top Overline Accent Bar -->
-                <line x1="68" y1="76" x2="152" y2="76" stroke="#222222" stroke-width="3.2" stroke-linecap="round" />
-                
-                <!-- Primary Brand Typography -->
-                <text x="103" y="106" 
-                      text-anchor="middle" 
-                      font-family="Inter, sans-serif" 
-                      font-weight="800" 
-                      font-size="29" 
-                      letter-spacing="0.5"
-                      fill="#1f2328">
-                    ROLEX
-                </text>
-                
-                <!-- Sub-brand Label -->
-                <text x="103" y="127" 
-                      text-anchor="middle" 
-                      font-family="Inter, sans-serif" 
-                      font-weight="700" 
-                      font-size="13.5" 
-                      letter-spacing="2.5"
-                      fill="#222222">
-                    MT ZONE
-                </text>
-            </svg>
-        </a>
-
-        <!-- Title Line Below Logo -->
-        <h1 class="text-xl sm:text-2xl font-bold tracking-wide mb-5">
-            <span class="text-[#28a745]">--- ROLEX</span>
-            <span class="text-[#222222]"> MT ZONE ---</span>
-        </h1>
-
-        <!-- Hindi Subtitle Description -->
-        <p class="text-[15px] sm:text-[17px] font-medium text-[#2d2d2d] leading-relaxed max-w-xl mb-8 px-2">
-            🇮🇳 भारत का सबसे भरोसेमंद एप्लीकेशन नीचे दिए गए बटन पर क्लिक करके एप्लीकेशन को डाउनलोड करें 👇
+<div class="main-container">
+    <!-- Header -->
+    <div class="header-card">
+        <h1 class="brand-name">ROLEX 777</h1>
+        <div class="sub-brand">GAME INFORMATION PORTAL</div>
+        <div class="welcome-text">आपका स्वागत है</div>
+        <p class="description">
+            विभिन्न बाजारों से जुड़ी सामान्य जानकारी और चैनल अपडेट एक ही जगह देखें।
         </p>
+    </div>
 
-        <!-- Large Pill-Shaped CTA Button with 3D Bottom Shadow -->
-        <div class="w-full flex justify-center mb-9">
-            <a href="https://t.me/+zcthgmrsbUo1ZmY1" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="inline-flex items-center justify-center gap-2.5 w-full max-w-[330px] sm:max-w-[370px] py-3.5 sm:py-4 px-8 rounded-full bg-gradient-to-b from-[#0077cc] to-[#005fa3] hover:from-[#0084e3] hover:to-[#006bb8] text-white font-semibold text-base sm:text-lg tracking-wider uppercase shadow-[0_4px_0_#004477,0_8px_16px_rgba(0,95,163,0.22)] active:translate-y-[2px] active:shadow-[0_2px_0_#004477] transition-all duration-150 select-none">
-                <span>DOWNLOAD NOW</span>
-                <!-- Clean Arrow Down Icon Badge -->
-                <span class="inline-flex items-center justify-center w-6 h-6 rounded bg-blue-300/30 border border-white/40 text-sm shadow-inner" aria-hidden="true">
-                    ⬇️
-                </span>
-            </a>
+
+    <!-- CTA Button -->
+    <a href="#" class="telegram-btn">
+        ✈ JOIN TELEGRAM CHANNEL
+    </a>
+
+    <!-- Market Info -->
+    <h2 class="market-title">MARKET INFORMATION</h2>
+    
+    <div class="market-grid">
+        <div class="market-card">
+            <div class="market-name">KALYAN</div>
+            <div class="market-info">General Information</div>
         </div>
+        <div class="market-card">
+            <div class="market-name">SHRIDEVI</div>
+            <div class="market-info">General Information</div>
+        </div>
+        <div class="market-card">
+            <div class="market-name">TIME BAZAR</div>
+            <div class="market-info">General Information</div>
+        </div>
+        <div class="market-card">
+            <div class="market-name">RAJADHANI DAY</div>
+            <div class="market-info">General Information</div>
+        </div>
+        <div class="market-card">
+            <div class="market-name">MAIN BAZAR</div>
+            <div class="market-info">General Information</div>
+        </div>
+        <div class="market-card">
+            <div class="market-name">MILAN BAZAR</div>
+            <div class="market-info">General Information</div>
+        </div>
+        <div class="market-card">
+            <div class="market-name">KALYAN NIGHT</div>
+            <div class="market-info">General Information</div>
+        </div>
+        <div class="market-card">
+            <div class="market-name">SHRIDEVI NIGHT</div>
+            <div class="market-info">General Information</div>
+        </div>
+    </div>
 
-        <!-- Centered Feature Highlights List -->
-        <ul class="w-full max-w-md mx-auto flex flex-col items-center space-y-5 sm:space-y-6 text-[15px] sm:text-[16.5px] font-medium text-[#333333]">
-            <li class="flex items-center justify-center gap-2">
-                <span aria-hidden="true">⚡</span>
-                <span>Fast &bull; Secure &bull; Easy Installation</span>
-            </li>
-            <li class="flex items-center justify-center gap-2">
-                <span aria-hidden="true">⚡</span>
-                <span>Safe &amp; secure Online Platform</span>
-            </li>
-            <li class="flex items-center justify-center gap-2">
-                <span aria-hidden="true">⚡</span>
-                <span>Smooth and clean interface</span>
-            </li>
-            <li class="flex items-center justify-center gap-2">
-                <span aria-hidden="true">⚡</span>
-                <span>Real - Time MTK Result&amp;chart</span>
-
-                        </li>
-            <li class="flex items-center justify-center gap-2">
-                <span aria-hidden="true">⚡</span>
-                <span>Anytime -- Support available</span>
-            </li>
-            <li class="flex items-center justify-center gap-2">
-                <span aria-hidden="true">⚡</span>
-                <span>100% Honest &amp; Transparent Service</span>
-            </li>
-        </ul>
-
-    </main>
+    <!-- Footer Disclaimer -->
+    <div class="disclaimer">
+        यह पेज केवल सामान्य जानकारी के लिए है। किसी भी परिणाम, "फिक्स रिपोर्ट" या जीत की गारंटी का दावा नहीं किया जाता। स्थानीय कानूनों का पालन करें।
+    </div>
+</div>
 
 </body>
 </html>
